@@ -1,0 +1,2 @@
+CREATE TABLE casos(id serial, caso int, nombre text, direccion text, afectacion text, estado text)
+INSERT INTO casos(caso, nombre, telefono, direccion, afectacion, estado) VALUES (2030, 'maicol', 3193855688, 'dg 49 sur', 'humedad', 'pdt visita');
