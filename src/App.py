@@ -116,7 +116,7 @@ frame = Frame()
 frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
 
 label = Label(frame, text='Add a caso')
-label.grid(row=0, column=1)
+label.grid(row=0, column=2)
 
 #numero de caso
 label = Label(frame, text="Caso")
@@ -141,27 +141,27 @@ entry_telefono.grid(row=3, column=1)
 
 #Direccion
 label = Label(frame, text="Direccion")
-label.grid(row=4, column=0)
+label.grid(row=1, column=2)
 
 entry_direccion = Entry(frame)
-entry_direccion.grid(row=4, column=1)
+entry_direccion.grid(row=1, column=3)
 
 #Afectacion
 label = Label(frame, text="Afectacion")
-label.grid(row=5, column=0)
+label.grid(row=2, column=2)
 
 entry_afectacion = Entry(frame)
-entry_afectacion.grid(row=5, column=1)
+entry_afectacion.grid(row=2, column=3)
 
 #Estado
 label = Label(frame, text="Estado")
-label.grid(row=6, column=0)
+label.grid(row=3, column=2)
 
 entry_estado = Entry(frame)
-entry_estado.grid(row=6, column=1)
+entry_estado.grid(row=3, column=3)
 
 #Button of save
-button = Button(frame, text="Add", command=lambda:save_new_case(
+button = Button(frame, text="Add", backgroun="#0575E6", command=lambda:save_new_case(
     entry_caso.get(),
     entry_nombre.get(),
     entry_telefono.get(),
@@ -169,7 +169,7 @@ button = Button(frame, text="Add", command=lambda:save_new_case(
     entry_afectacion.get(),
     entry_estado.get()   
     ))
-button.grid(row=7, column=1, sticky=W+E)
+button.grid(row=7, column=2, sticky=W+E)
 
 #Search
 label = Label(frame, text="Search Data")
