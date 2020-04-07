@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import END, Tk, Listbox, W, E, Frame, Canvas, Label, Entry, Button 
 import psycopg2
 import tkinter as tk
 from tkinter import ttk
